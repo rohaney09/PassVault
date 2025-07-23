@@ -75,8 +75,8 @@ const Manager = () => {
     <>
       <ToastContainer {...toastOptions} />
 
-      <div className="bg-gradient-to-b from-gray-900 to-indigo-800 min-h-screen p-4 ">
-        <div className="max-w-4xl mx-auto rounded-lg p-4 shadow-lg space-y-6">
+      <div className="bg-gradient-to-b from-gray-900 to-indigo-800 min-h-screen p-4 md:p-10">
+        <div className="max-w-4xl mx-auto rounded-lg p-6 shadow-lg space-y-6">
           <div className="flex justify-center">
             <lord-icon
               src="https://cdn.lordicon.com/ezaczjxp.json"
@@ -144,50 +144,80 @@ const Manager = () => {
               <p className="text-center text-white mt-4">No passwords added yet.</p>
             ) : (
               <div className="overflow-auto">
-                <table className="w-full mt-4 text-white">
-                  <thead className="bg-blue-800">
-                    <tr>
-                      <th className="py-2 px-2 text-left">Website</th>
-                      <th className="py-2 px-2 text-left">Username</th>
-                      <th className="py-2 px-2 text-left">Password</th>
-                      <th className="py-2 px-2">Edit</th>
-                      <th className="py-2 px-2">Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {passwordArray.map((item, index) => (
-                      <tr key={index} className="odd:bg-gray-900 even:bg-gray-800 border-b border-gray-700">
-                        <td className="py-2 px-2">
-                          <a href={item.website} target="_blank" rel="noreferrer" className="hover:underline">
-                            {item.website}
-                          </a>
-                        </td>
-                        <td className="py-2 px-2">{item.username}</td>
-                        <td className="py-2 px-2">{item.password}</td>
-                        <td className="py-2 px-2">
-                          <button onClick={() => handleEdit(index)}>
-                            <lord-icon
-                              src="https://cdn.lordicon.com/cbtlerlm.json"
-                              trigger="loop"
-                              colors="primary:#000,secondary:#ffc738"
-                              style={{ width: "25px", height: "25px" }}
-                            ></lord-icon>
-                          </button>
-                        </td>
-                        <td className="py-2 px-2">
-                          <button onClick={() => handleDelete(index)}>
-                            <lord-icon
-                              src="https://cdn.lordicon.com/xyfswyxf.json"
-                              trigger="loop"
-                              colors="primary:#c71f16"
-                              style={{ width: "25px", height: "25px" }}
-                            ></lord-icon>
-                          </button>
-                        </td>
+                <div className="hidden md:block">
+                  <table className="w-full mt-4 text-white">
+                    <thead className="bg-blue-800">
+                      <tr>
+                        <th className="py-2 px-2 text-left">Website</th>
+                        <th className="py-2 px-2 text-left">Username</th>
+                        <th className="py-2 px-2 text-left">Password</th>
+                        <th className="py-2 px-2">Edit</th>
+                        <th className="py-2 px-2">Delete</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {passwordArray.map((item, index) => (
+                        <tr key={index} className="odd:bg-gray-900 even:bg-gray-800 border-b border-gray-700">
+                          <td className="py-2 px-2">
+                            <a href={item.website} target="_blank" rel="noreferrer" className="hover:underline">
+                              {item.website}
+                            </a>
+                          </td>
+                          <td className="py-2 px-2">{item.username}</td>
+                          <td className="py-2 px-2">{item.password}</td>
+                          <td className="py-2 px-2">
+                            <button onClick={() => handleEdit(index)}>
+                              <lord-icon
+                                src="https://cdn.lordicon.com/cbtlerlm.json"
+                                trigger="loop"
+                                colors="primary:#000,secondary:#ffc738"
+                                style={{ width: "25px", height: "25px" }}
+                              ></lord-icon>
+                            </button>
+                          </td>
+                          <td className="py-2 px-2">
+                            <button onClick={() => handleDelete(index)}>
+                              <lord-icon
+                                src="https://cdn.lordicon.com/xyfswyxf.json"
+                                trigger="loop"
+                                colors="primary:#c71f16"
+                                style={{ width: "25px", height: "25px" }}
+                              ></lord-icon>
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="md:hidden space-y-4 mt-4">
+                  {passwordArray.map((item, index) => (
+                    <div key={index} className="bg-gray-900 p-4 rounded-md shadow-md">
+                      <p className="text-sm text-gray-300"><strong>Website:</strong> <a href={item.website} target="_blank" rel="noreferrer" className="hover:underline">{item.website}</a></p>
+                      <p className="text-sm text-gray-300"><strong>Username:</strong> {item.username}</p>
+                      <p className="text-sm text-gray-300"><strong>Password:</strong> {item.password}</p>
+                      <div className="flex justify-end gap-4 mt-2">
+                        <button onClick={() => handleEdit(index)}>
+                          <lord-icon
+                            src="https://cdn.lordicon.com/cbtlerlm.json"
+                            trigger="loop"
+                            colors="primary:#000,secondary:#ffc738"
+                            style={{ width: "25px", height: "25px" }}
+                          ></lord-icon>
+                        </button>
+                        <button onClick={() => handleDelete(index)}>
+                          <lord-icon
+                            src="https://cdn.lordicon.com/xyfswyxf.json"
+                            trigger="loop"
+                            colors="primary:#c71f16"
+                            style={{ width: "25px", height: "25px" }}
+                          ></lord-icon>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
