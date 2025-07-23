@@ -72,7 +72,7 @@ const Manager = () => {
   const togglePassword = () => setShowPassword(!showPassword);
 
   return (
-    <>
+    <div>
       <ToastContainer {...toastOptions} />
 
       <div className="bg-gradient-to-b from-gray-900 to-indigo-800 min-h-screen p-4 md:p-10">
@@ -223,7 +223,7 @@ const Manager = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
