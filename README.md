@@ -1,5 +1,6 @@
 # 🔐 PassVault – Secure Password Manager
 Website: https://pass-vault-ashy.vercel.app/
+
 <img width="1893" height="1070" alt="image" src="https://github.com/user-attachments/assets/39f0f2fa-9874-4069-831e-da0250ea2da6" />
 <img width="1900" height="881" alt="image" src="https://github.com/user-attachments/assets/d0e85ab4-ffb4-4a17-a19e-b8cc4e2d5294" />
 <img width="1894" height="878" alt="image" src="https://github.com/user-attachments/assets/11b71170-9159-4a14-815c-7662d2695bb7" />
@@ -31,12 +32,6 @@ Website: https://pass-vault-ashy.vercel.app/
 | Vite         | Fast build tool and development server  |
 | Tailwind CSS | Utility-first CSS framework             |
 | LocalStorage | For saving credentials securely offline |
-
----
-
-## 📸 Screenshots
-
-<img src="assets/screenshot.png" width="600" alt="PassVault Screenshot" />
 
 ---
 
