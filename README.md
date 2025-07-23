@@ -1,97 +1,98 @@
-# 🚀 React + Vite Web Application
+# 🔐 PassVault – Secure Password Manager
+Website: https://pass-vault-ashy.vercel.app/
+<img width="1893" height="1070" alt="image" src="https://github.com/user-attachments/assets/39f0f2fa-9874-4069-831e-da0250ea2da6" />
+<img width="1900" height="881" alt="image" src="https://github.com/user-attachments/assets/d0e85ab4-ffb4-4a17-a19e-b8cc4e2d5294" />
+<img width="1894" height="878" alt="image" src="https://github.com/user-attachments/assets/11b71170-9159-4a14-815c-7662d2695bb7" />
+<img width="1895" height="883" alt="image" src="https://github.com/user-attachments/assets/1119275c-8407-45e2-a96d-d6e3e465b88c" />
 
-Welcome to the source code of our modern, professional, and responsive **React + Vite** web application. Built with performance and user experience in mind, this project demonstrates best practices using the latest front-end technologies.
 
-![Vite + React Logo](https://vitejs.dev/logo-with-shadow.png)
 
----
 
-## 🔥 Features
-
-* ⚛️ **React + Vite** — Ultra-fast build setup using Vite and React for blazing performance.
-* 💅 **Modern UI/UX** — Responsive, clean, and mobile-first interface.
-* 🖠️ **Component-Based Architecture** — Modular structure using reusable components.
-* 🧑‍💼 **Manager Panel** — Add, edit, delete records with easy-to-use buttons.
-* 📱 **Mobile Friendly** — Optimized layout for all screen sizes with buttons displayed column-wise on smaller screens.
-* 🔔 **Toast Notifications** — Integrated with `react-toastify` for non-intrusive success and error messages.
-* 🌐 **Deployed on Vercel** — Seamless CI/CD deployment for production-ready hosting.
+**PassVault** is a secure and lightweight web-based password manager built using **React + Vite**. It allows users to store, manage, and retrieve their credentials with ease and privacy. Designed for simplicity and functionality, PassVault is the perfect tool for users looking for a personal, offline-first password storage solution.
 
 ---
 
-## 🗂️ Folder Structure
+## 🚀 Features
 
-```bash
-├── public/
-├── src/
-│   ├── components/
-│   │   └── Manager.jsx       # Main manager component (CRUD logic here)
-│   ├── App.jsx               # Root component
-│   ├── main.jsx              # Vite app entry
-│   └── styles/               # Optional: global or modular styles
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+* 🔑 **Add New Credentials** – Save usernames, passwords, and links securely.
+* 🔍 **Search** – Quickly filter your stored credentials by name.
+* ✏️ **Edit & Update** – Modify existing saved entries with ease.
+* ❌ **Delete** – Remove outdated or unused passwords anytime.
+* 📋 **Copy to Clipboard** – Instantly copy credentials to your clipboard with one click.
+* 🌙 **Dark Mode** – Modern UI with a clean, dark theme for better visibility.
 
 ---
 
-## 🚀 Getting Started
+## 🧱 Tech Stack
 
-### 1. Clone the repository
+| Tech         | Description                             |
+| ------------ | --------------------------------------- |
+| React        | Front-end library for building the UI   |
+| Vite         | Fast build tool and development server  |
+| Tailwind CSS | Utility-first CSS framework             |
+| LocalStorage | For saving credentials securely offline |
+
+---
+
+## 📸 Screenshots
+
+<img src="assets/screenshot.png" width="600" alt="PassVault Screenshot" />
+
+---
+
+## 🛠️ Installation
 
 ```bash
-git clone https://github.com/your-username/your-project-name.git
-cd your-project-name
-```
-
-### 2. Install dependencies
-
-```bash
+git clone https://github.com/your-username/passvault.git
+cd passvault
 npm install
-```
-
-### 3. Run the development server
-
-```bash
 npm run dev
 ```
 
-Visit [http://localhost:5173](http://localhost:5173) to see it in action.
+Visit `http://localhost:5173` to view the application in development mode.
 
 ---
 
-## ⚙️ Production Build
-
-To generate a production build:
+## ⚙️ Build for Production
 
 ```bash
 npm run build
 ```
 
-Then preview using:
+---
 
-```bash
-npm run preview
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│   └── Manager.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
 ```
 
 ---
 
-## 📦 Deployment
+## 🧠 Future Enhancements
 
-This project is deployed using [**Vercel**](https://vercel.com/). Simply connect your GitHub repository and Vercel will handle the rest, including build and deployment!
-
+* 🔒 Integration with encryption libraries (e.g., CryptoJS)
+* 🔐 Authentication/Login system
+* ☁️ Cloud Syncing via Firebase or Supabase
+* 📱 Mobile responsiveness improvements
+* 🧪 Unit testing with Jest & React Testing Library
 
 ---
 
-## 🥪 Tech Stack
+## 🙏 Acknowledgements
 
-* React
-* Vite
-* JavaScript (ES6+)
-* Tailwind CSS or your preferred styling (if any)
-* React Toastify
-* Git + GitHub
-* Vercel (for hosting)
+* Vite and React community
+* Tailwind CSS for styling
+* GitHub for hosting and collaboration
+
+---
+
+## 📃 License
 
 This project is licensed under the [MIT License](LICENSE).
+
