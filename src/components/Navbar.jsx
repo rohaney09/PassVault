@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-       <nav className="bg-gray-800 p-1">
+       <nav className ="bg-gray-800 p-1">
             <div className="container mx-auto flex justify-between items-center">
            <h1 className="text-transparent text-4xl font-extrabold bg-clip-text bg-gradient-to-r from-blue-500 via-white to-blue-800 drop-shadow-lg">
   PassVault
