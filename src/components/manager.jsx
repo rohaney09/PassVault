@@ -6,7 +6,7 @@ import { Eye, EyeOff } from "lucide-react";
 
 const Manager = () => {
   const [showPassword, setShowPassword] = useState(true);
-  const [passwordArray, setPasswordArray] = useState([]);
+  const [passwordArray,setPasswordArray] = useState([]);
   const [form, setForm] = useState({ website: "", username: "", password: "" });
   const [editIndex, setEditIndex] = useState(null);
 
