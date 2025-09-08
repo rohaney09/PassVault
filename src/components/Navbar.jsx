@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar =() => {
   return (
     <div>
        <nav className ="bg-gray-800 p-1">
@@ -12,7 +12,7 @@ const Navbar = () => {
             
             {/* <ul className="flex gap-10">
                 <li><a href="#" className="text-white hover:text-gray-500 font-bold transition-all">Home</a></li>
-                <li><a href="#" className="text-white hover:text-gray-500 font-bold">About</a></li>
+                <li><a href="#" className ="text-white hover:text-gray-500 font-bold">About</a></li>
                 <li><a href="#" className="text-white hover:text-gray-500 font-bold">Data</a></li>
             </ul> */}
             </div>
